@@ -1,0 +1,35 @@
+---
+title: "Sitio Firebase"
+---
+
+```{r}
+
+## Carga de Librerias
+library(tidyverse)
+library(rpart.plot)
+library(class)
+library(psych)
+
+
+
+
+citybike <-read.csv("citibike-tripdata.csv")
+citybike <- filter(citybike,No<=1000)
+
+
+
+citybike
+
+```
+```{r}
+
+describe(citybike)
+
+```
+
+
+```{r}
+
+summary(citybike$start_lat)
+
+```
